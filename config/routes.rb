@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  resources :students, only: :index
+  resources :students do
+    get 'index'
+    get 'show'
+  end
 end
